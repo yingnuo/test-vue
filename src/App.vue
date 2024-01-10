@@ -1,28 +1,61 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <el-row type="flex" class="row-bg" justify="center">
+      <el-col :span="12"> <Crc /></el-col>
+
+      <el-col :span="12"> <AsciiToStr /></el-col>
+    </el-row>
+    <el-row type="flex" class="row-bg" justify="center">
+      <el-col :span="12"><Sum /></el-col>
+      
+      <el-col :span="12"> <TimeTool /></el-col>
+    </el-row>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AsciiToStr from "./components/AsciiToStr.vue";
+import Crc from "./components/Crc.vue";
+import Sum from "./components/Sum.vue";
+import TimeTool from "./components/TimeTool.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Crc,
+    TimeTool,
+    AsciiToStr,
+    Sum,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
+}
+.el-row {
+  margin-bottom: 20px;
+}
+.el-col {
+  border-radius: 4px;
+}
+.bg-purple-dark {
+  background: #99a9bf;
+}
+.bg-purple {
+  background: #ebf5dd;
+}
+.bg-purple-light {
+  background: #ebf5dd;
+}
+.grid-content {
+  border-radius: 4px;
+  min-height: 36px;
+}
+.row-bg {
+  padding: 10px 0;
+  background-color: #ecf8dc;
 }
 </style>
