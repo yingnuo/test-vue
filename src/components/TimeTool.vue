@@ -11,30 +11,21 @@
           @change="timeStampChange"
         >
         </el-date-picker>
-        <el-form
-          ref="form"
-          :model="form"
-          label-width="150px"
-          style="margin-top: 20px; margin-right: 50px"
-        >
-          <el-form-item label="时间戳(秒)">
-            <el-input
-              v-model="timeS"
-              placeholder="请输入秒数"
-              @change="timeSChange"
-            ></el-input>
-          </el-form-item>
-          <el-form-item label="16进制(秒)">
-            <el-input
-              v-model="timeStampHex"
-              placeholder="请输入16进制秒"
-              @change="timeStampHexChange"
-            ></el-input>
-          </el-form-item>
-          <el-form-item label="16进制反转(秒)">
-            <el-input v-model="reverseTSH"></el-input>
-          </el-form-item>
-        </el-form>
+        <br>
+        时间戳(秒)
+        <el-input
+          v-model="timeS"
+          placeholder="请输入秒数"
+          @change="timeSChange"
+        ></el-input>
+        16进制(秒)
+        <el-input
+          v-model="timeStampHex"
+          placeholder="请输入16进制秒"
+          @change="timeStampHexChange"
+        ></el-input>
+        16进制反转(秒)
+        <el-input v-model="reverseTSH"></el-input>
       </el-tab-pane>
       <el-tab-pane label="2000-1-1 00:00:00开始计算" name="second">
         <el-date-picker
@@ -45,34 +36,23 @@
           @change="timeStamp2000Change"
         >
         </el-date-picker>
-        <el-form
-          ref="form"
-          :model="form"
-          label-width="150px"
-          style="margin-top: 20px; margin-right: 50px"
-        >
-        <el-form-item label="时间戳(秒)">
-          <el-input
-            v-model="timeS2000"
-            placeholder="请输入秒数"
-            @change="timeS2000Change"
-          ></el-input>
-        </el-form-item>
-          
-          <el-form-item label="16进制(秒)">
-          <el-input
-            v-model="timeStamp2000Hex"
-            placeholder="请输入16进制秒"
-            @change="timeStampHex2000Change"
-          ></el-input>
-          </el-form-item>
-                    
-          <el-form-item label="16进制反转(秒)">
-          <el-input
-            v-model="reverseTSH2000"
-          ></el-input>
-          </el-form-item>
-        </el-form>
+<br>
+        时间戳(秒)
+        <el-input
+          v-model="timeS2000"
+          placeholder="请输入秒数"
+          @change="timeS2000Change"
+        ></el-input>
+
+        16进制(秒)
+        <el-input
+          v-model="timeStamp2000Hex"
+          placeholder="请输入16进制秒"
+          @change="timeStampHex2000Change"
+        ></el-input>
+
+        16进制反转(秒)
+        <el-input v-model="reverseTSH2000"></el-input>
       </el-tab-pane>
     </el-tabs>
   </div>

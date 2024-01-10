@@ -7,7 +7,7 @@
     </el-row>
     <el-row type="flex" class="row-bg" justify="center">
       <el-col :span="12"><Sum /></el-col>
-      
+
       <el-col :span="12"> <TimeTool /></el-col>
     </el-row>
   </div>
@@ -31,6 +31,10 @@ export default {
 </script>
 
 <style>
+#app {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -58,4 +62,5 @@ export default {
   padding: 10px 0;
   background-color: #ecf8dc;
 }
+
 </style>
